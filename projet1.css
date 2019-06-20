@@ -1,0 +1,13 @@
+body {margin:0;}
+td {color : white;
+	font-family: "bariol", sans serif;
+font-size: 14px;}
+
+table {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+}
+
+#background {background-image: url("voyage_malte.png");}

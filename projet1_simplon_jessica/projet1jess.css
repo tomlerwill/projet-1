@@ -1,0 +1,71 @@
+body {
+	margin: 0;
+}
+
+/* Container for nav bar */
+#flex-container-nav {
+	padding-top: 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #693460;
+	color: #fff;
+}
+
+
+/* styling boxes inside nav bar container */
+.sec-style {
+	margin: 0;
+	flex-grow: 1;
+	padding: 5px;
+	font-family: "bariol", sans serif;
+}
+
+.sec-style:hover {
+	color: #F9BF38;
+}
+
+
+/* add styling for only first and last element using subclasses inside nav bar 
+-> make the boxes biggest. */
+.sec-style:first-child { /* first div with class sec-Style */
+	flex-grow: 2;
+	justify-content: left;
+	padding-left: 30px;
+}
+
+.sec-style:nth-child(2){
+	position: relative;
+}
+
+.deco { /* yellow line under second child */
+	border-radius: 2px;
+	background-color: #F9BF38;
+	width: 130px;
+	height: 4px;
+	position: absolute;
+	top: 153%;
+	left: 2%;
+}
+
+.sec-style:last-child { /* last div with class sec-Style */
+	flex-grow: 2;
+	justify-content: right;
+	align-items: center;
+	padding-right: 30px;
+}
+
+.item { /* all items in last div concerned */
+	margin: 10px;
+}
+
+/* embeded containers to handle logo display into the last element */
+#logo {
+	display: flex;
+}
+
+/* Style for icons */
+.fas fa-search {
+	color: white;
+}
+
